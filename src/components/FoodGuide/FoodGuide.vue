@@ -32,7 +32,7 @@
 <style lang="scss" scoped>
   .foodGuide{
     width: 100%;
-    position:absolute;
+    position:fixed;
     z-index: 100;
     left: 0px;
     bottom: 0px;

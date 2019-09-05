@@ -6,10 +6,18 @@
 </template>
 
 <script>
+  import {mapActions} from 'vuex'
   import FoodGuide from './components/FoodGuide/FoodGuide.vue'
   export default {
     components: {
       FoodGuide
+    },
+    methods: {
+      ...mapActions(['getAddress','getUserInfo'])
+    },
+    mounted (){
+      this.getAddress()
+      this.getUserInfo()
     }
   }
 </script>
